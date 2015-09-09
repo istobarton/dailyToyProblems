@@ -13,10 +13,7 @@ function mygcd(x,y){
       return y;
     }
     for(var j=y-1; j>0; j--){
-        xRes = x%j===0;
-        yRes = y%j===0;
-
-        if(xRes && yRes){
+        if(x%j===0 && y%j===0){
             return j;
         }
      }
@@ -27,10 +24,7 @@ function mygcd(x,y){
       return x;
     }
     for(var i=x-1; i>0; i--){
-        xRes = x%i===0;
-        yRes = y%i===0;
-
-        if(xRes && yRes){
+        if(x%i===0 && y%i===0){
             return i;
         }
     }
