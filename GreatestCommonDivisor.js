@@ -30,3 +30,15 @@ function mygcd(x,y){
     }
   }
 }
+
+//DID NOT SOLVE
+//BEST SOLUTION AVAILABLE:
+
+function mygcd(x,y){
+  return y == 0 ? x : mygcd(y, x % y)
+}
+
+//If y is equal to 0, that means that we have found the lowest common divisor
+//We know this is the case because we switch x and y through each iteration of the function call
+//We also pass in the remainder of dividing the two numbers -- providing us a smaller common divisor
+
